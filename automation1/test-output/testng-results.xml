@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1038" started-at="2018-06-06T09:53:29Z" finished-at="2018-06-06T09:53:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1038" started-at="2018-06-06T09:53:29Z" finished-at="2018-06-06T09:53:30Z">
+      <class name="ExtentReport.Reports">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:ExtentReport.Reports@28d25987]" name="startReport" is-config="true" duration-ms="346" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="FAIL" signature="demoTestFail()[pri:0, instance:ExtentReport.Reports@28d25987]" name="demoTestFail" duration-ms="16" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ExtentReport.Reports.demoTestFail(Reports.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTestFail -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Reports@28d25987]" name="getResult" is-config="true" duration-ms="23" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoTestFail status=FAILURE method=Reports.demoTestFail()[pri:0, instance:ExtentReport.Reports@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="demoTestPass()[pri:0, instance:ExtentReport.Reports@28d25987]" name="demoTestPass" duration-ms="2" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTestPass -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Reports@28d25987]" name="getResult" is-config="true" duration-ms="2" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoTestPass status=SUCCESS method=Reports.demoTestPass()[pri:0, instance:ExtentReport.Reports@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="demoTestSkip()[pri:0, instance:ExtentReport.Reports@28d25987]" name="demoTestSkip" duration-ms="2" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[This test case cannot be executed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: This test case cannot be executed
+	at ExtentReport.Reports.demoTestSkip(Reports.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTestSkip -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Reports@28d25987]" name="getResult" is-config="true" duration-ms="36" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoTestSkip status=SKIP method=Reports.demoTestSkip()[pri:0, instance:ExtentReport.Reports@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ExtentReport.Reports@28d25987]" name="tearDown" is-config="true" duration-ms="586" started-at="2018-06-06T15:23:29Z" finished-at="2018-06-06T15:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ExtentReport.Reports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
